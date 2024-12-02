@@ -42,7 +42,7 @@
 nav {
   font-family: "poppins", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -58,7 +58,7 @@ nav a:hover {
   color: #7ad1b2;
 }
 
-/* CONNEXION */
+/* styles.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -81,7 +81,7 @@ body {
 .tabs {
   display: flex;
   justify-content: space-around;
-  background: #7ad1b2;
+  background: #007bff;
 }
 
 .tab-button {
@@ -98,7 +98,7 @@ body {
 
 .tab-button:hover,
 .tab-button.active {
-  background: #3f7763;
+  background: #0056b3;
 }
 
 .tab-content {
@@ -129,7 +129,7 @@ input {
 
 button {
   padding: 10px;
-  background: #7ad1b2;
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
