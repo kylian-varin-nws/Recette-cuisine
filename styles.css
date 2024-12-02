@@ -39,41 +39,21 @@
   resize: none;
 }
 
-.nav {
+nav {
   font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
 }
 
-.accueil {
-  font-size: 18px;
+nav a {
+  font-size: 20px;
   color: black;
   text-decoration: none;
 }
 
-.accueil:hover {
-  color: #7ad1b2;
-}
-
-.plats {
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
-}
-
-.plats:hover {
-  color: #7ad1b2;
-}
-
-.tendances {
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
-}
-
-.tendances:hover {
+nav a:hover {
   color: #7ad1b2;
 }
