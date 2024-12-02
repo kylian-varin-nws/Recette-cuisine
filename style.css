@@ -4,14 +4,19 @@ feuille de style principal
 authors: Anas, Evan, ...
 */
 
+.recette-create {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  align-content: center;
   font-family: "Poppins", sans-serif;
-  padding-left: 400px;
-  padding-right: 400px;
   gap: 10px;
   font-size: 18px;
+  width: 600px;
 }
 
 .send-recipe {
