@@ -54,8 +54,12 @@ authors: Anas, Evan, ...
   background-color: #7ad1b2;
   stroke: none;
   border: 0;
-  color: black;
+  color: white;
   border-radius: 20px;
+}
+
+.send-recipe:hover {
+  background-color: #63a991;
 }
 
 .titre {
@@ -115,4 +119,18 @@ authors: Anas, Evan, ...
   display: flex;
   gap: 20px;
   margin-top: 50px;
+}
+
+.button-login {
+  color: white;
+  background-color: #7ad1b2;
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.button-login:hover {
+  background-color: #63a991;
 }
