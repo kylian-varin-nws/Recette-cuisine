@@ -48,6 +48,7 @@ h1 {
 .hero {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 .recette-create {
   display: flex;
@@ -164,7 +165,7 @@ h1 {
 }
 
 /* --- GLOBAL STYLES --- */
-body {
+main {
   background-color: white;
   font-size: 16px;
   line-height: 1.6;
@@ -182,7 +183,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  margin: 20px;
   color: white;
 }
 
