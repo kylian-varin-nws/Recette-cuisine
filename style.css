@@ -9,7 +9,7 @@ h1 {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   display: flex;
@@ -17,7 +17,6 @@ h1 {
   align-content: center;
   background-color: white;
   justify-content: space-between;
-  width: 100%;
 }
 
 .header-logo {
@@ -48,7 +47,6 @@ h1 {
 .hero {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
 }
 .recette-create {
   display: flex;
