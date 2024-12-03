@@ -4,9 +4,26 @@ feuille de style principal
 authors: Anas, Evan, ...
 */
 
+h1 {
+  font-family: sans-serif;
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
+  align-content: center;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+  padding: 5px;
 }
 
 .header-nav {
@@ -28,6 +45,11 @@ authors: Anas, Evan, ...
   color: #7ad1b2;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
 .recette-create {
   display: flex;
   justify-content: center;
@@ -118,7 +140,6 @@ authors: Anas, Evan, ...
 .carrousel-card {
   display: flex;
   gap: 20px;
-  margin-top: 50px;
 }
 
 .button-login {
