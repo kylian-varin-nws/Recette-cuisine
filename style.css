@@ -160,12 +160,12 @@ h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /* --- GLOBAL STYLES --- */
 body {
-  background-color: #f4f7fc;
+  background-color: white;
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
@@ -176,7 +176,7 @@ body {
 .newsletter {
   /* background-image: url(foie-gras-grille_1203-3589.avif); */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(img-newsletter.avif);
+    url(img-newsletter.avif);
   padding: 40px;
   border-radius: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -225,7 +225,7 @@ body {
 
 .newsletter-inputs button {
   padding: 15px 30px;
-  background-color: #7AD1B2;
+  background-color: #7ad1b2;
   color: white;
   font-size: 1rem;
   border: none;
@@ -242,18 +242,18 @@ body {
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
   .newsletter h2 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .newsletter p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .newsletter-inputs input[type="email"] {
-      width: 60%;
+    width: 60%;
   }
 
   .newsletter-inputs button {
-      width: 40%;
+    width: 40%;
   }
 }
