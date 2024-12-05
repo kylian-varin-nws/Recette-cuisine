@@ -5,47 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="connexion.js"></script>
   </head>
-  <body>
-    <header class="header">
-      <a href="index.html">
-        <img class="header-logo" src="image/logo.png" alt="Logo" />
+  <header class="header">
+    <a href="index.html">
+      <img class="header-logo" src="image/logo.png" alt="Logo" />
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="accueil">Accueil</a>
+      <a href="plats.html" class="plats">Recettes</a>
+      <a href="recette-create.html" class="recette-create">
+        Partager une recette
       </a>
-      <nav class="header-nav">
-        <a href="index.html" class="accueil">Accueil</a>
-        <a href="plats.html" class="plats">Recettes</a>
-        <a href="recette-create.html" class="recette-create">
-          Partager une recette
-        </a>
-      </nav>
-      <a href="connexion.html" class="button-login">Login/Register</a>
-    </header>
-    <section>
-      <h1>Se connecter</h1>
-      <p>Heureux de vous voir parmis nous !</p>
-    </section>
+    </nav>
+  </header>
+  <body class="body-connexion">
+    <section class="section-connexion">
+      <div class="form-container-connexion" >
+        <div class="connexion-head">
+          <button class="close-btn" onclick="closePage()">×</button>
+          <h2>Connexion ou Inscription</h2>
+          <p>Accédez à votre compte ou créez-en un pour profiter de nos services.</p>
+        </div>
 
-    <form>
-      <div>
-        <label>Adresse e-mail</label>
-        <input type="email" required placeholder="info@gmail.com" />
+         <!-- Croix de fermeture pour revenir à l'accueil -->
+
+     <!-- Formulaire de connexion/inscription -->
+     <form id="authForm">
+      <div class="form-inputs-connexion">
+        <!-- Email -->
+        <input 
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Votre adresse e-mail"
+          required
+        />
+
+        <!-- Mot de passe -->
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Votre mot de passe"
+          required
+        />
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Se connecter</button>
       </div>
 
-      <div>
-        <label>Mot de passe</label>
-        <input type="password" required placeholder="mots de passe" />
+      <div class="form-switch-connexion">
+        <p>Vous n'avez pas de compte ? <a href="#" onclick="switchToSignUp()">Inscrivez-vous ici</a></p>
+        <p>Vous avez déjà un compte ? <a href="#" onclick="switchToLogin()">Connectez-vous ici</a></p>
       </div>
     </form>
-
-    <section>
-      <a href="mots_de_passe_oublier.html">Mot de passe oublié ?</a>
-      <div>
-        <button type="submit">Connexion<a href=""></a></button>
-        <p>ou</p>
-        <button type="submit">
-          <a href="cree_un_compte.html"> Créer un compte</a>
-        </button>
-      </div>
-    </section>
+  </div>
+</section>
   </body>
 </html>
+
+
