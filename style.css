@@ -8,52 +8,6 @@ h1 {
   font-family: sans-serif;
   font-size: larger;
 }
-/*
-.header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: grid;
-  align-items: center;
-  align-content: center;
-}
-
-.premier-barre-head {
-  font-family: "poppins", sans-serif;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  background-color: white;
-}
-
-.header-logo {
-  height: 50px;
-  width: auto;
-  padding: 5px;
-}
-
-.header-nav {
-  font-family: "poppins", sans-serif;
-  margin: 0 auto;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #7ad1b2;
-}
-
-.header-nav a {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.header-nav a:hover {
-  color: black;
-}
-
 
 /* Styles globaux */
 body {
@@ -413,8 +367,7 @@ main {
 }
 
 .section-connexion {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("background-image.jpg");
+  background: white;
   background-size: cover;
   background-position: center;
   padding: 50px;
