@@ -51,7 +51,7 @@ h1 {
 }
 
 .header-nav a:hover {
-  color: #7ad1b2;
+  color: black;
 }
 
 .hero {
@@ -424,7 +424,6 @@ main {
 }
 
 .searchbar-inputs button {
-  padding: 15px 20px;
   background-color: #7ad1b2;
   color: white;
   font-size: 1rem;
@@ -433,6 +432,10 @@ main {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: auto;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-content: center;
 }
 
 .searchbar-inputs button:hover {
