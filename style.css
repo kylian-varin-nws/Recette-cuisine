@@ -525,3 +525,104 @@ main {
 .searchbar-inputs button:hover {
   background-color: #63a991;
 }
+
+/* Style général */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.titre {
+  text-align: center;
+  font-size: 2rem;
+  color: #7ad1b2;
+  margin: 20px 0;
+}
+
+/* Conteneur du formulaire */
+.recette-create {
+  margin: 0;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des labels */
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style des champs de saisie */
+.form input[type="text"],
+.form input[type="number"],
+.form textarea,
+.form input[type="file"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #fefefe;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #7ad1b2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(122, 209, 178, 0.5);
+}
+
+/* Style des textarea */
+.form textarea {
+  resize: vertical;
+}
+
+/* Champ pour l'image */
+.form input[type="file"] {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Bouton envoyer */
+.send-recipe {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: #7ad1b2;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.send-recipe:hover {
+  background: #63a991;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ombre au survol */
+.form input[type="text"]:hover,
+.form textarea:hover,
+.form input[type="number"]:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recette-create {
+    padding: 15px;
+  }
+}
