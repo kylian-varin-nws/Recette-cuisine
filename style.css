@@ -14,11 +14,18 @@ h1 {
   top: 0;
   left: 0;
   height: 1cm;
-  display: flex;
+  display: grid;
   align-items: center;
   align-content: center;
-  background-color: white;
+}
+
+.premier-barre-head {
+  font-family: "poppins", sans-serif;
+  padding: 10px;
+  display: flex;
   justify-content: space-between;
+  gap: 20px;
+  background-color: #63a991;
 }
 
 .header-logo {
@@ -34,6 +41,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 20px;
+  background-color: #7ad1b2;
 }
 
 .header-nav a {
@@ -51,6 +59,12 @@ h1 {
   flex-direction: column;
   margin-bottom: 100px;
 }
+
+.corps-du-texte {
+  display: list-item;
+  justify-items: center;
+}
+
 .recette-create {
   display: flex;
   justify-content: center;
@@ -159,7 +173,7 @@ h1 {
 
 /* --- RESET CSS --- */
 * {
-  margin: 0;
+  margin: 6;
   padding: 0;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
@@ -259,134 +273,132 @@ main {
   }
 }
 
-
 /*page connexion */
-    .body-connexion {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+.body-connexion {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-    .section-connexion {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 50px;
-      border-radius: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      color: white;
-    }
+.section-connexion {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+}
 
-    .form-container-connexion {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 15px;
-    }
+.form-container-connexion {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
 
-    .form-container-connexion h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
+.form-container-connexion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
-    .form-container-connexion p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
+.form-container-connexion p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
 
-    .form-inputs-connexion {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+.form-inputs-connexion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .form-inputs-connexion input {
-      padding: 15px;
-      font-size: 1rem;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      outline: none;
-      transition: border-color 0.3s ease;
-    }
+.form-inputs-connexion input {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
 
-    .form-inputs-connexion input:focus {
-      border-color: #3498db;
-    }
+.form-inputs-connexion input:focus {
+  border-color: #3498db;
+}
 
-    .form-inputs-connexion button {
-      padding: 15px;
-      background-color: #7ad1b2;
-      color: white;
-      font-size: 1rem;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.form-inputs-connexion button {
+  padding: 15px;
+  background-color: #7ad1b2;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .form-inputs-connexion button:hover {
-      background-color: #2980b9;
-    }
+.form-inputs-connexion button:hover {
+  background-color: #2980b9;
+}
 
-    .form-switch-connexion {
-      margin-top: 20px;
-      font-size: 0.9rem;
-    }
+.form-switch-connexion {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
 
-    .form-switch-connexion a {
-      color: #7ad1b2;
-      text-decoration: none;
-    }
+.form-switch-connexion a {
+  color: #7ad1b2;
+  text-decoration: none;
+}
 
-    .form-switch-connexion a:hover {
-      text-decoration: underline;
-    }
+.form-switch-connexion a:hover {
+  text-decoration: underline;
+}
 
-    /* --- RESPONSIVE DESIGN --- */
-    @media (max-width: 768px) {
-      .form-container-connexion {
-        padding: 15px;
-      }
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .form-container-connexion {
+    padding: 15px;
+  }
 
-      .form-container-connexion h2 {
-        font-size: 1.8rem;
-      }
+  .form-container-connexion h2 {
+    font-size: 1.8rem;
+  }
 
-      .form-inputs-connexion input {
-        width: 100%;
-      }
+  .form-inputs-connexion input {
+    width: 100%;
+  }
 
-      .form-inputs-connexion button {
-        width: 100%;
-      }
-    }
+  .form-inputs-connexion button {
+    width: 100%;
+  }
+}
 
+/* --- Style de la croix de fermeture --- */
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
 
-        /* --- Style de la croix de fermeture --- */
-        .close-btn {
-          display: flex;
-          justify-content: flex-end;
-          top: 20px;
-          right: 20px;
-          font-size: 2rem;
-          color: white;
-          cursor: pointer;
-          background: transparent;
-          border: none;
-          transition: color 0.3s ease;
-        }
-    
-        .close-btn:hover {
-          color: #e74c3c;
-        }
-    
-        .connexion-head {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-        }
-        
+.close-btn:hover {
+  color: #e74c3c;
+}
+
+.connexion-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
