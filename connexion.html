@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="style.css" />
     <script src="connexion.js"></script>
   </head>
-  <header  class="header"  > 
-
+  <header class="header">
     <div class="premier-barre-head">
-        
-        <div class="image-logo">
-          <a href="index.html">
-          <img class="header-logo" src="image/logo.png" alt="Logo" />  
-        </a> 
-        </div>
-        <div class="barre de recherche" >
-          <input type="text" placeholder="Rechercher vos plats"> 
-          <img class="image-recherche"  src=""> </div>
-        <div class="buttum-connexion"> <a href="connexion.html" class="button-login">Login/Register</a>
-        </div>
-        </div>
-        </div>
-  
-        </div>
-        </div>
-      <div class="deuxième-barre_recherche">
-        <div>
+      <div class="image-logo">
+        <a href="index.html">
+          <img class="header-logo" src="image/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="searchbar-inputs">
+        <input
+          type="text"
+          name="text"
+          placeholder="Recherchez une recette"
+          required=""
+        />
+        <img class="image-recherche" src="" />
+        <button type="submit">
+          <img src="image/rechercher.png" height="16px" alt="" />
+        </button>
+      </div>
+
+      <div class="buttum-connexion">
+        <a href="connexion.html" class="button-login">Connexion</a>
+      </div>
+    </div>
+    <div class="deuxième-barre_recherche">
+      <div>
         <nav class="header-nav">
           <a href="index.html" class="accueil">Accueil</a>
           <a href="plats.html" class="plats">Recettes</a>
@@ -36,53 +41,58 @@
           </a>
         </nav>
       </div>
-      </div>
-      </header>
+    </div>
   </header>
   <body class="body-connexion">
     <section class="section-connexion">
-      <div class="form-container-connexion" >
+      <div class="form-container-connexion">
         <div class="connexion-head">
           <button class="close-btn" onclick="closePage()">×</button>
           <h2>Connexion ou Inscription</h2>
-          <p>Accédez à votre compte ou créez-en un pour profiter de nos services.</p>
+          <p>
+            Accédez à votre compte ou créez-en un pour profiter de nos services.
+          </p>
         </div>
 
-         <!-- Croix de fermeture pour revenir à l'accueil -->
+        <!-- Croix de fermeture pour revenir à l'accueil -->
 
-     <!-- Formulaire de connexion/inscription -->
-     <form id="authForm">
-      <div class="form-inputs-connexion">
-        <!-- Email -->
-        <input 
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Votre adresse e-mail"
-          required
-        />
+        <!-- Formulaire de connexion/inscription -->
+        <form id="authForm">
+          <div class="form-inputs-connexion">
+            <!-- Email -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre adresse e-mail"
+              required
+            />
 
-        <!-- Mot de passe -->
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Votre mot de passe"
-          required
-        />
+            <!-- Mot de passe -->
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Votre mot de passe"
+              required
+            />
 
-        <!-- Bouton de soumission -->
-        <button type="submit">Se connecter</button>
+            <!-- Bouton de soumission -->
+            <button type="submit">Se connecter</button>
+          </div>
+
+          <div class="form-switch-connexion">
+            <p>
+              Vous n'avez pas de compte ?
+              <a href="#" onclick="switchToSignUp()">Inscrivez-vous ici</a>
+            </p>
+            <p>
+              Vous avez déjà un compte ?
+              <a href="#" onclick="switchToLogin()">Connectez-vous ici</a>
+            </p>
+          </div>
+        </form>
       </div>
-
-      <div class="form-switch-connexion">
-        <p>Vous n'avez pas de compte ? <a href="#" onclick="switchToSignUp()">Inscrivez-vous ici</a></p>
-        <p>Vous avez déjà un compte ? <a href="#" onclick="switchToLogin()">Connectez-vous ici</a></p>
-      </div>
-    </form>
-  </div>
-</section>
+    </section>
   </body>
 </html>
-
-
